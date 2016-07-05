@@ -33,5 +33,41 @@ This CAN-BUS Shield adopts MCP2515 CAN Bus controller with SPI interface and MCP
 6. Serial Grove connector
 7. I2C Grove connector
 8. ICSP pins
-9. **IC** - MCP2551, a high-speed can transceiver (datasheet)
-10. **IC** - MCP2515, stand-alone CAN controller wth SPI interface (datasheet)
+9. **IC** - MCP2551, a high-speed can transceiver ([datasheet](https://github.com/SeeedDocument/CAN_BUS_Shield/raw/master/resource/Mcp2551.pdf))
+10. **IC** - MCP2515, stand-alone CAN controller wth SPI interface ([datasheet](https://github.com/SeeedDocument/CAN_BUS_Shield/raw/master/resource/MCP2515.pdf))
+
+
+!!!warning
+    When you use more than two CAN Bus Shield in one net, you should think about the impedance.
+    You can just cut P1 in the PCB with a knife, or just remove R3 on the PCB.
+
+###Digital Pin Used
+
+|Arduino Pin|Function               |
+|-----------|-----------------------|
+|D0         |Not Used               |
+|D1	        |Not Used               |
+|D2		    |**Receive Interrupt**  |
+|D3     	|Not Used               |
+|D4	        |Not_Used               |
+|D5	        |Not Used               |
+|D6	        |Not Used               |
+|D7	        |Not Used               |
+|D8	        |Not Used               |
+|D9	        |**SPI_CS(default)**    |
+|D10        |**SPI_CS(selectable)** |
+|D11        |**SPI_MOSI(default)**  |
+|D12        |**SPI_MISO(default) ** |
+|D13        |**SPI_SCK(default) **  |
+
+###Analog Pin Used
+
+
+|Arduino Pin|Function|
+|-----------|--------|
+|A0	        |Not_Used|
+|A1	        |Not_Used|
+|A2	        |Not_Used|
+|A3	        |Not_Used|
+|A4	        |Not Used|
+|A5	        |Not Used|
