@@ -41,7 +41,7 @@ This CAN-BUS Shield adopts MCP2515 CAN Bus controller with SPI interface and MCP
     When you use more than two CAN Bus Shield in one net, you should think about the impedance.
     You can just cut P1 in the PCB with a knife, or just remove R3 on the PCB.
 
-###Digital Pin Used
+###Digital Pin Used(Arduino UNO pinout)
 
 |Arduino Pin|Function               |
 |-----------|-----------------------|
@@ -60,7 +60,7 @@ This CAN-BUS Shield adopts MCP2515 CAN Bus controller with SPI interface and MCP
 |D12        |**SPI_MISO(default)** |
 |D13        |**SPI_SCK(default)**  |
 
-###Analog Pin Used
+###Analog Pin Used(Arduino UNO pinout)
 
 
 |Arduino Pin|Function|
@@ -71,6 +71,26 @@ This CAN-BUS Shield adopts MCP2515 CAN Bus controller with SPI interface and MCP
 |A3	        |Not_Used|
 |A4	        |Not Used|
 |A5	        |Not Used|
+
+###CS pin
+
+SPI_CS pin of V1.2 is fefault to **D9**. If you want to change it to D10. Take a look at the back of the PCBA, you will find a pad named CS. You can cut the wire that at the left of the pad with a box cutter, and the solder the right 2 pads. 
+
+!!!warning
+    Be careful when you are going to change CS pin, it's easy to hear yourself or the PCBA.
+
+![](https://github.com/SeeedDocument/CAN_BUS_Shield/blob/master/image/hardware_overview_pins_setting.png?raw=true)
+
+###SPI pins
+
+The SPI pins(SCK, MISO, MOSI) is default to the ICSP pins. But for some Boards, maybe the SPI pins is at D11~D13, if so you need to change something in the PCBA. Take a look that the back of the PCBA, there're there pads, MOSI, MISO and SCK, they are default to A. You can change them to B if needed.
+
+!!!note
+    For Arduino UNO, Arduino Mega, Arduino Leonardo and any others AVR based Arduino boards, default is working. 
+
+!!!warning
+    Be careful when you are going to change SPI pins, it's easy to hear yourself or the PCBA.
+
 
 ##Getting Started
 
@@ -256,3 +276,6 @@ From each node (IE Switch pod that controls your windows or electric door locks)
 * **【Datasheet】**[MCP2551 datasheet](https://github.com/SeeedDocument/CAN_BUS_Shield/raw/master/resource/Mcp2551.pdf)
 * **【Demo】**[An OBD Demo](https://github.com/Seeed-Studio/CANBUS_SHIELD_OBD_RECIPLE)
 * 【**Tool】**[MCP2515 Baud Rate Tool](https://github.com/SeeedDocument/CAN_BUS_Shield/raw/master/resource/CAN_Baudrate_CalcV1.3.zip)
+
+##Is this page helpful
+<iframe style="height: 600px; width: 500px; margin: 10px 0 10px;" allowTransparency="true" src="这里插入你刚才产生的那个链接" frameborder="0"></iframe>
