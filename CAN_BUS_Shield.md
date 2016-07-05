@@ -188,5 +188,35 @@ We had provided many frequently-used baud rate, as below:
 
 Yet you may still can't find the rate you want. Here we provide a software to help you to calculate the baud rate you need.
 
-Click here to download the software, it's in Chinese, but never mind, it's easy to use. And the software support Windows only.
+Click [here](https://github.com/SeeedDocument/CAN_BUS_Shield/raw/master/resource/CAN_Baudrate_CalcV1.3.zip) to download the software, it's in Chinese, but never mind, it's easy to use. 
+
+![](https://github.com/SeeedDocument/CAN_BUS_Shield/blob/master/image/CAN_BUS_Shield_SetBaud.jpg?raw=true)
+
+!!!note
+    This software support Windows system only. If you can't open it, please free to contact loovee@seeed.cc for help. 
+
+Open the software, what you need to do is set the baud rate you want, and do some simple setting, then click **calculate**.
+
+Then you will get some data, cfg1, cfg2 and cfg3.
+
+You need to add some code to the library.
+
+Open **mcp_can_dfs.h**, you need to add some code at about line 272:
+
+	#define MCP_16MHz_xxxkBPS_CFG1 (cfg1)    // xxx is the baud rate you need
+	#define MCP_16MHz_xxxkBPS_CFG2 (cfg2)
+	#define MCP_16MHz_xxxkBPS_CFG3 (cfg2)
+
+Then let's go to about line 390, add some code:
+
+	#define CAN_xxxKBPS NUM       // xxx is the baudrate you need, and NUM is a number, you need to get a different from the other rates.
+Open **mcp_can.cpp**, goto the function **mcp2515_configRate**(at about line 190), then add some code:
+
+	case (CAN_xxxKBPS):
+	    cfg1 = MCP_16MHz_xxxkBPS_CFG1;
+	    cfg2 = MCP_16MHz_xxxkBPS_CFG2;
+	    cfg3 = MCP_16MHz_xxxkBPS_CFG3;
+	    break;
+Then you can use the baud rate you need. And please give me a pull request at github when you use a new rate, so I can add it to the library to help the other guys.
+
 
