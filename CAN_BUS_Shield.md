@@ -10,9 +10,9 @@ This CAN-BUS Shield adopts MCP2515 CAN Bus controller with SPI interface and MCP
 
 ##Features
 
-- Implements CAN V2.0B at up to 1 Mb/s
-- SPI Interface up to 10 MHz
-- Standard (11 bit) and extended (29 bit) data and remote frames
+- Implements CAN V2.0B at up to **1 Mb/s**
+- SPI Interface up to **10 MHz**
+- Standard (**11 bit**) and extended (**29 bit**) data and remote frames
 - Two receive buffers with prioritized message storage
 - Industrial standard 9 pin sub-D connector
 - LED indicators
@@ -57,8 +57,8 @@ This CAN-BUS Shield adopts MCP2515 CAN Bus controller with SPI interface and MCP
 |D9	        |**SPI_CS(default)**    |
 |D10        |**SPI_CS(selectable)** |
 |D11        |**SPI_MOSI(default)**  |
-|D12        |**SPI_MISO(default) ** |
-|D13        |**SPI_SCK(default) **  |
+|D12        |**SPI_MISO(default)** |
+|D13        |**SPI_SCK(default)**  |
 
 ###Analog Pin Used
 
