@@ -75,6 +75,10 @@ The SPI pins(SCK, MISO, MOSI) is default to the ICSP pins. But for some Boards, 
 
 Here's a simple demo to show you how CAN-BUS Shield works. In this demo we need 2 piece of CAN-BUS Shield as well as Arduino/Seeeduino.
 
+!!!note
+    This demo is built under [Arduino IDE version 1.6.9](https://www.arduino.cc/download_handler.php?f=/arduino-1.6.9-windows.zip).
+
+
 ###STEP1: What do we need
 
 |Name|Function|Qty|Link|
@@ -96,10 +100,24 @@ Insert each CAN-BUS Shield to Seeeduino V4.2, and connect the 2 CAN-BUS Shield t
 
 Click on the below button to download the library.
 
+[![](https://raw.githubusercontent.com/SeeedDocument/CAN_BUS_Shield/master/image/download_library.png)](https://github.com/Seeed-Studio/CAN_BUS_Shield)
 
+Install the library to your Arduino IDE when it is downloaded. 
+
+Of of the node(a node means Seeeduino + CAN_BUS Shield) act as master, the other act as slaver. The master will send data to slaver constantly. 
+
+!!!note
+    Each node can act at master before the code is uploaded. 
+
+Open the **send** example (**File > Examples > CAN_BUS_Shield-master > send**) and upload to the **master**. 
+
+Open the **receive_check** example (**File > Examples > CAN_BUS_Shield-master > receive_check**) and upload to the **slaver**.
 
 ###STEP4: View Result
 
+Open the Serial Monitor of Arduino IDE(**slaver**), you will get the data sent from the master. 
+
+// image
 
 ##APIs
 
