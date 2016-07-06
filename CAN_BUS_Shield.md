@@ -29,10 +29,10 @@ This CAN-BUS Shield adopts MCP2515 CAN Bus controller with SPI interface and MCP
     - **RX**: blink when there's data coming
     - **INT**: data interrupt
 4. **Terminal** - CAN_H and CAN_L
-5. Arduino UNO pin out
-6. Serial Grove connector
-7. I2C Grove connector
-8. ICSP pins
+5. **Arduino UNO pin out**
+6. **Serial Grove connector**
+7. **I2C Grove connector**
+8. **ICSP pins**
 9. **IC** - MCP2551, a high-speed can transceiver ([datasheet](https://github.com/SeeedDocument/CAN_BUS_Shield/raw/master/resource/Mcp2551.pdf))
 10. **IC** - MCP2515, stand-alone CAN controller wth SPI interface ([datasheet](https://github.com/SeeedDocument/CAN_BUS_Shield/raw/master/resource/MCP2515.pdf))
 
@@ -57,8 +57,8 @@ This CAN-BUS Shield adopts MCP2515 CAN Bus controller with SPI interface and MCP
 |D9	        |**SPI_CS(default)**    |
 |D10        |**SPI_CS(selectable)** |
 |D11        |**SPI_MOSI(default)**  |
-|D12        |**SPI_MISO(default)** |
-|D13        |**SPI_SCK(default)**  |
+|D12        |**SPI_MISO(default)**  |
+|D13        |**SPI_SCK(default)**   |
 
 ###Analog Pin Used(Arduino UNO pinout)
 
@@ -74,7 +74,7 @@ This CAN-BUS Shield adopts MCP2515 CAN Bus controller with SPI interface and MCP
 
 ###CS pin
 
-SPI_CS pin of V1.2 is fefault to **D9**. If you want to change it to D10. Take a look at the back of the PCBA, you will find a pad named CS. You can cut the wire that at the left of the pad with a box cutter, and the solder the right 2 pads. 
+SPI_CS pin of V1.2 is fefault to **D9**. If you want to change it to **D10**. Take a look at the back of the PCBA, you will find a pad named **CS**. You can cut the wire that at the left of the pad with a box cutter, and the solder the right 2 pads. 
 
 !!!warning
     Be careful when you are going to change CS pin, it's easy to hear yourself or the PCBA.
@@ -83,7 +83,7 @@ SPI_CS pin of V1.2 is fefault to **D9**. If you want to change it to D10. Take a
 
 ###SPI pins
 
-The SPI pins(SCK, MISO, MOSI) is default to the ICSP pins. But for some Boards, maybe the SPI pins is at D11~D13, if so you need to change something in the PCBA. Take a look that the back of the PCBA, there're there pads, MOSI, MISO and SCK, they are default to A. You can change them to B if needed.
+The SPI pins(**SCK**, **MISO**, **MOSI**) is default to the ICSP pins. But for some Boards, maybe the SPI pins is at D11~D13, if so you need to change something in the PCBA. Take a look that the back of the PCBA, there're there pads, MOSI, MISO and SCK, they are default to A. You can change them to B if needed.
 
 !!!note
     For Arduino UNO, Arduino Mega, Arduino Leonardo and any others AVR based Arduino boards, default is working. 
@@ -217,7 +217,7 @@ Click [here](https://github.com/SeeedDocument/CAN_BUS_Shield/raw/master/resource
 
 Open the software, what you need to do is set the baud rate you want, and do some simple setting, then click **calculate**.
 
-Then you will get some data, cfg1, cfg2 and cfg3.
+Then you will get some data, **cfg1**, **cfg2** and **cfg3**.
 
 You need to add some code to the library.
 
@@ -278,4 +278,4 @@ From each node (IE Switch pod that controls your windows or electric door locks)
 * 【**Tool】**[MCP2515 Baud Rate Tool](https://github.com/SeeedDocument/CAN_BUS_Shield/raw/master/resource/CAN_Baudrate_CalcV1.3.zip)
 
 ##Is this page helpful
-<iframe style="height: 600px; width: 500px; margin: 10px 0 10px;" allowTransparency="true" src="这里插入你刚才产生的那个链接" frameborder="0"></iframe>
+<iframe style="height: 600px; width: 500px; margin: 10px 0 10px;" allowTransparency="true" src="https://www.surveymonkey.com/r/32WG3KT" frameborder="0"></iframe>
