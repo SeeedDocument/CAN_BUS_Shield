@@ -6,7 +6,7 @@
 
 **CAN-BUS** is a common industrial bus because of its long travel distance, medium communication speed and high reliability. It is commonly found on modern machine tools and as an automotive diagnostic bus. 
 
-This CAN-BUS Shield adopts MCP2515 CAN Bus controller with SPI interface and MCP2551 CAN transceiver to give your Arduino/Seeeduino CAN-BUS capibility. With an OBD-II converter cable added on and the OBD-II library imported, you are ready to build an onboard diagnostic device or data logger.
+This CAN-BUS Shield adopts **MCP2515** CAN Bus controller with SPI interface and **MCP2551** CAN transceiver to give your Arduino/Seeeduino CAN-BUS capibility. With an **OBD-II** converter cable added on and the OBD-II library imported, you are ready to build an onboard diagnostic device or data logger.
 
 
 [![](https://raw.githubusercontent.com/SeeedDocument/Seeed-WiKi/master/docs/images/get_one_now.png)](http://www.seeedstudio.com/depot/CANBUS-Shield-V12-p-2256.html)
@@ -17,7 +17,7 @@ This CAN-BUS Shield adopts MCP2515 CAN Bus controller with SPI interface and MCP
 - SPI Interface up to **10 MHz**
 - Standard (**11 bit**) and extended (**29 bit**) data and remote frames
 - Two receive buffers with prioritized message storage
-- Industrial standard 9 pin sub-D connector
+- Industrial standard DB-9 connector
 - LED indicators
 
 ##Hardware Overview
@@ -91,7 +91,7 @@ Here's a simple demo to show you how CAN-BUS Shield works. In this demo we need 
 
 Insert each CAN-BUS Shield to Seeeduino V4.2, and connect the 2 CAN-BUS Shield togeter via 2 jumper wires. Shown as below images. 
 
-// image
+![](https://raw.githubusercontent.com/SeeedDocument/CAN_BUS_Shield/master/image/connection.png)
 
 !!!note
     CAN_H to CAN_H, CAN_L to CAN_L
@@ -117,7 +117,7 @@ Open the **receive_check** example (**File > Examples > CAN_BUS_Shield-master > 
 
 Open the Serial Monitor of Arduino IDE(**slaver**), you will get the data sent from the master. 
 
-// image
+![](https://raw.githubusercontent.com/SeeedDocument/CAN_BUS_Shield/master/image/serial_monitor.png)
 
 ##APIs
 
