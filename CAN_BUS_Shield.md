@@ -73,7 +73,32 @@ The SPI pins(SCK, MISO, MOSI) is default to the ICSP pins. But for some Boards, 
 
 ##Getting Started
 
-// to be continue
+Here's a simple demo to show you how CAN-BUS Shield works. In this demo we need 2 piece of CAN-BUS Shield as well as Arduino/Seeeduino.
+
+###STEP1: What do we need
+
+|Name|Function|Qty|Link|
+|----|--------|---|----|
+|CAN-BUS Shield|CAN Bus communication | 2 | [link](http://www.seeedstudio.com/depot/CANBUS-Shield-V12-p-2256.html) |
+|Seeeduino V4.2|Controller|2|[link](http://www.seeedstudio.com/item_detail.html?p_id=2517)|
+|Jumper Wire|connection|2|[link](http://www.seeedstudio.com/item_detail.html?p_id=234)|
+
+###STEP2: Hardware Connection
+
+Insert each CAN-BUS Shield to Seeeduino V4.2, and connect the 2 CAN-BUS Shield togeter via 2 jumper wires. Shown as below images. 
+
+// image
+
+!!!note
+    CAN_H to CAN_H, CAN_L to CAN_L
+
+###STEP3: Software
+
+Click on the below button to download the library.
+
+
+
+###STEP4: View Result
 
 
 ##APIs
@@ -233,7 +258,7 @@ Ever wanted to play a car/truck simulator with a real dashboard on your PC? Me t
 
 ###Hack your vehicle CAN-BUS
 
-[![enter image description here](http://www.seeedstudio.com/wiki/images/thumb/d/d0/Get_One_Now_Banner.png/150px-Get_One_Now_Banner.png)](http://www.seeedstudio.com/depot/Breakout-for-LinkIt-Smart-7688-v20-p-2641.html)
+![](https://github.com/SeeedDocument/CAN_BUS_Shield/blob/master/image/project2.jpg?raw=true)
 
 Modern Vehicles all come equipped with a CAN-BUS Controller Area Network, Instead of having a million wires running back and forth from various devices in your car to the battery, its making use of a more clever system.
 
