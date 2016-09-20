@@ -1,7 +1,12 @@
-#CAN-BUS Shield
-----
-##Introduction
-----
+---
+title: CAN-BUS Shield V1.2
+category: Arduino
+bzurl: https://www.seeedstudio.com/CAN-BUS-Shield-V1.2-p-2256.html
+oldwikiname: CAN-BUS_Shield_V1.2
+prodimagename: Can_bus_shield_all.jpg
+surveyurl: https://www.research.net/r/can_bus_shield
+sku: 113030021
+---
 
 ![](https://github.com/SeeedDocument/CAN_BUS_Shield/blob/master/image/Can_bus_shield_all.jpg?raw=true)
 
@@ -337,6 +342,3 @@ From each node (IE Switch pod that controls your windows or electric door locks)
 
 * You can post a question to [Seeed Forum](http://www.seeed.cc/discover.html?t=Arduino) or send an email to **techsupport@seeed.cc**.
 
-
-##Is this page helpful
-<iframe style="height: 600px; width: 700px; margin: 10px 0 10px;" allowTransparency="true" src="https://www.research.net/r/can_bus_shield" frameborder="0"></iframe>
